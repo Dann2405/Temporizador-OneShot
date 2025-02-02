@@ -1,0 +1,5 @@
+[wokwi]
+
+version = 1
+firmware = 'build/Temporizador-OneShot.uf2'
+elf = 'build/Temporizador-OneShot.elf'
