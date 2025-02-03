@@ -12,6 +12,7 @@ void init_gpio_button()
     gpio_pull_up(BUTTON);
 }
 
+// função OneShot para que os LEDs sejam desligando sequencialmente
 void OneShot()
 {
     if(gpio_get(BUTTON) == 0 && !leds_active)

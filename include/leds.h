@@ -10,7 +10,6 @@ const uint LED_B = 12; // led azul - GPIO 12
 const uint LED_G = 11; // led verde - GPIO 11
 
 bool leds_active = false; // verifica se o led esta aceso, para evitar multiplas ativações
-absolute_time_t turn_off_time; // variavel para armazenar o tempo em que os LEDs devem ser desligados
 
 // declarando funções callbacks para evitar erros "undeclared"
 int64_t turn_off_callback_ledR(alarm_id_t id, void *user_data);
