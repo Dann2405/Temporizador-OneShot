@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
-#include "pico/time.h"
+#include "pico/time.h" // biblioteca de gerenciamento de temporizadores e alarmes
 #include "include/leds.h"
 
 

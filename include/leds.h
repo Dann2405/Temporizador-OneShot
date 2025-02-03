@@ -21,3 +21,32 @@ void init_gpio_leds()
     gpio_set_dir(LED_G, GPIO_OUT); // define o led como saida
 }
 
+// função de callback para desligar o led vermelho após o tempo programado
+int64_t turn_off_callback_ledR(alarm_id_t id, void *user_data)
+{
+    gpio_put(LED_R, 0);
+
+    led_active = false;
+
+    return 0;
+}
+
+// função de callback para desligar o led azul após o tempo programado
+int64_t turn_off_callback_ledB(alarm_id_t id, void *user_data)
+{
+    gpio_put(LED_B, 0);
+
+    led_active = false;
+
+    return 0;
+}
+
+// função de callback para desligar o led verde após o tempo programado
+int64_t turn_off_callback_ledG(alarm_id_t id, void *user_data)
+{
+    gpio_put(LED_G, 0);
+
+    led_active = false;
+
+    return 0;
+}
