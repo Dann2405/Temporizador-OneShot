@@ -9,6 +9,8 @@
 int main()
 {
     stdio_init_all();
+    init_gpio_leds();
+    init_gpio_button();
 
     while (true) {
         sleep_ms(50);
