@@ -4,8 +4,14 @@
   "editor": "wokwi",
   "parts": [
     { "type": "board-pi-pico-w", "id": "pico", "top": 6.35, "left": 3.55, "attrs": {} },
-    { "type": "wokwi-led", "id": "led1", "top": 54, "left": -197.8, "attrs": { "color": "blue" } },
-    { "type": "wokwi-led", "id": "led2", "top": 102, "left": -197.8, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led1", "top": 54, "left": -197.8, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 102,
+      "left": -197.8,
+      "attrs": { "color": "blue" }
+    },
     {
       "type": "wokwi-led",
       "id": "led3",
@@ -44,14 +50,9 @@
     [ "r3:1", "led1:C", "black", [ "v0", "h-96", "v-153.6" ] ],
     [ "led2:C", "r2:1", "black", [ "v0", "h-38", "v57.6" ] ],
     [ "led3:C", "r1:1", "black", [ "v0", "h-38", "v9.6" ] ],
-    [ "led2:A", "pico:GP12", "green", [ "v0", "h144", "v19.2" ] ],
-    [ "pico:GP11", "led1:A", "green", [ "h-28.8", "v-19.2", "h-144", "v-38.4" ] ],
-    [
-      "pico:GP13",
-      "led3:A",
-      "green",
-      [ "h-38.4", "v0.04", "h-9.6", "v-19.2", "h-124.8", "v38.4" ]
-    ]
+    [ "led1:A", "pico:GP13", "green", [ "v0", "h153.6", "v76.8" ] ],
+    [ "led3:A", "pico:GP11", "green", [ "v0", "h144", "v-38.4" ] ],
+    [ "led2:A", "pico:GP12", "green", [ "v0", "h134.4", "v19.2" ] ]
   ],
   "dependencies": {}
 }
