@@ -12,6 +12,8 @@ int main()
     init_gpio_leds();
     init_gpio_button();
 
+    last_press_time = get_absolute_time();
+
     while (true) {
         sleep_ms(50);
         OneShot();
