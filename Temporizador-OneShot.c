@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 
+#include "include/leds.h"
+
 
 
 int main()
