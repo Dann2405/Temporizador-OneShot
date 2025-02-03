@@ -26,7 +26,7 @@ int64_t turn_off_callback_ledR(alarm_id_t id, void *user_data)
 {
     gpio_put(LED_R, 0);
 
-    led_active = false;
+    add_alarm_in_ms(3000, turn_off_callback_ledR, NULL, false);
 
     return 0;
 }
@@ -35,9 +35,7 @@ int64_t turn_off_callback_ledR(alarm_id_t id, void *user_data)
 int64_t turn_off_callback_ledB(alarm_id_t id, void *user_data)
 {
     gpio_put(LED_B, 0);
-
-    led_active = false;
-
+    add_alarm_in_ms(3000, turn_off_callback_ledB, NULL, false);
     return 0;
 }
 
@@ -45,8 +43,6 @@ int64_t turn_off_callback_ledB(alarm_id_t id, void *user_data)
 int64_t turn_off_callback_ledG(alarm_id_t id, void *user_data)
 {
     gpio_put(LED_G, 0);
-
     led_active = false;
-
     return 0;
 }
