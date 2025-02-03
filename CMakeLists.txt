@@ -46,7 +46,8 @@ pico_enable_stdio_usb(Temporizador-OneShot 1)
 
 # Add the standard library to the build
 target_link_libraries(Temporizador-OneShot
-        pico_stdlib)
+        pico_stdlib
+        pico_time)
 
 # Add the standard include files to the build
 target_include_directories(Temporizador-OneShot PRIVATE
