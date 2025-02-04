@@ -67,9 +67,9 @@ Para testar o projeto no **Wokwi Simulator**, siga os passos abaixo:
 2. Clique no botão **"Play"** para iniciar a simulação.
 3. O comportamento esperado é:
    - Ao pressionar o pushbutton, todos os LEDs acendem.
-   - Após 3 segundos, um LED é desligado.
-   - Após mais 3 segundos, outro LED é desligado.
-   - Esse processo se repete até que todos os LEDs estejam apagados.
+   - Após 3 segundos, o LED vermelho é desligado.
+   - Após mais 3 segundos, o LED Azul é desligado.
+   - Esse processo termina quando até que todos os LEDs estejam apagados.
    - O terminal exibirá mensagens indicando que o botão foi pressionado e o OneShot foi iniciado.
 
 ---
@@ -99,6 +99,13 @@ Para testar o projeto no **Wokwi Simulator**, siga os passos abaixo:
    | LED Azul       | GP12         |
    | LED Verde      | GP11         |
    | Pushbutton     | GP5          |
+
+4. O comportamento esperado é:
+   - Ao pressionar o pushbutton, todos os LEDs acendem, resultando na cor branca.
+   - Após 3 segundos, o LED vermelho é desligado, resultando na cor ciano.
+   - Após mais 3 segundos, o LED Azul é desligado, resultando na cor verde.
+   - Esse processo se repete até que todos os LEDs estejam apagados.
+   - O terminal exibirá mensagens indicando que o botão foi pressionado e o OneShot foi iniciado.
 
 ---
 
